@@ -1,0 +1,29 @@
+body {
+	font-family: "chunkfiveroman", Verdana, sans-serif;
+}
+
+.navbar-default {
+	background: white;
+	border-radius: 0;
+	border: 2px solid black;
+}
+
+.navbar-default .navbar-brand {
+	color: #0000CC;
+	font-size: 2em;
+	border-radius: 0;
+}
+
+.footer-columns ul {
+	list-style: none;
+	display: inline-block;
+	color: white;
+	padding-right: 25px;
+	font-family: Verdana, sans-serif;
+
+}
+
+.title {
+	font-size: 1.25em;
+	font-weight: bold;
+}

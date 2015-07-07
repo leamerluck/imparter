@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
   <title>Imparter</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Imparter</a>
+    </div>
 
-<%= yield %>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><a href="#">See all courses</a></li>
+      </ul>
+        
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Log In</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+		<%= yield %>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container footer-columns">
+		<ul class="column1">
+			<li class="title">Teachers</li>
+			<li>Teach a Course</li>
+			<li>View Dashboard</li>
+		</ul>
+		<ul class="column2">
+			<li class="title">About</li>
+			<li>Team</li>
+			<li>Careers</li>
+		</ul>
+		<ul class="column3">
+			<li class="title">Contact</li>
+			<li>Chris McIntyre</li>
+			<li>Rural Western PA</li>
+		</ul>
+	</div>
+</div>
 
 </body>
 </html>
