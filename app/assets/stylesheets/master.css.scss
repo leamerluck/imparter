@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
 body {
-font-family: 'Josefin Sans', sans-serif;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	background: url(light_toast.png);
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
