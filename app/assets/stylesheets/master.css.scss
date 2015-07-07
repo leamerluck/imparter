@@ -1,29 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
 body {
-	font-family: "chunkfiveroman", Verdana, sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+	margin: 0;
 }
 
 .navbar-default {
-	background: white;
+	background: url('old_moon.png');
 	border-radius: 0;
 	border: 2px solid black;
+	box-shadow: 0px 1px 3px #2a2a2a;
 }
 
-.navbar-default .navbar-brand {
-	color: #0000CC;
-	font-size: 2em;
+.navbar-default a.navbar-brand {
+	color: #337ab7;
+	font-size: 36px;
+	font-weight: 100;
 	border-radius: 0;
 }
 
-.footer-columns ul {
+.footer-columns {
+	margin: 0;
+	padding: 10px;
+
+	ul {
 	list-style: none;
 	display: inline-block;
 	color: white;
 	padding-right: 25px;
-	font-family: Verdana, sans-serif;
-
+	font-family: 'Josefin Sans', sans-serif;
+	
+		a{
+				text-decoration: none;
+		}
+	}
 }
 
 .title {
 	font-size: 1.25em;
 	font-weight: bold;
+}
+
+.hero {
+	background: url('hero.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 370px;
+	box-shadow: 0px 3px 8px #2A2A2A;
+}
+
+.frosty {
+	background: rgba(0,0,0, 0.5);
+	color: white;
+
+	h1 {
+		font-family: "Helvetica Neue";
+		font-weight: 100;
+		text-shadow: rgba(0,0,0,0.95) 1px 1px;
+	}
+
+	h2 {
+		font-family: "Helvetica Neue";
+		font-weight: 200;
+		text-shadow: rgba(0,0,0,0.95) 1px 1px;
+
+	}
+}
+
+.btn {
+	border-radius: 0;
 }

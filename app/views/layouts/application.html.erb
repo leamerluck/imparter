@@ -33,27 +33,27 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-		<%= yield %>
-<div class="navbar navbar-inverse navbar-fixed-bottom">
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
 	<div class="container footer-columns">
 		<ul class="column1">
 			<li class="title">Teachers</li>
-			<li>Teach a Course</li>
-			<li>View Dashboard</li>
+			<li><a href="#">Teach a Course</a></li>
+			<li><a href="#">View Dashboard</a></li>
 		</ul>
 		<ul class="column2">
 			<li class="title">About</li>
-			<li>Team</li>
-			<li>Careers</li>
+			<li><a href="#">Team</a></li>
+			<li><a href="#">Careers</a></li>
 		</ul>
 		<ul class="column3">
 			<li class="title">Contact</li>
-			<li>Chris McIntyre</li>
-			<li>Rural Western PA</li>
+			<li><a href="#">Chris McIntyre</a></li>
+			<li><a href="#">Rural Western PA</a></li>
 		</ul>
 	</div>
-</div>
+</nav>
+
+		<%= yield %>
 
 </body>
 </html>
