@@ -36,6 +36,9 @@ gem 'devise'
 # Simple form for sign-in, sign-up, etc.
 gem 'simple_form'
 
+# Gem for TDD
+gem 'factory_girl_rails', '~> 4.0'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

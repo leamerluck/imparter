@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<nav class="navbar navbar-default">
+  
+<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -18,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Imparter</a>
+      <h1><%= link_to 'Imparter', root_path %></h1>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,34 +41,36 @@
   </nav>
   <!-- Alert user when log in successful or failed -->
   <% if notice.present? %>
-    <p class="notice"><%= "User successfully signed in" %></p>
+    <p class="alert alert-info"><%= "User successfully signed in" %></p>
   <% end %>
   <% if alert.present? %>
-    <p class="alert alert-info"><%= "User credentials invalid" %></p>
+    <p class="alert alert-danger"><%= "User credentials invalid" %></p>
   <% end %>
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
 
   <!-- Sticky footer -->
-	<div class="container footer-columns">
-		<ul class="column1">
-			<li class="title">Teachers</li>
-			<li><a href="#">Teach a Course</a></li>
-			<li><a href="#">View Dashboard</a></li>
-		</ul>
-		<ul class="column2">
-			<li class="title">About</li>
-			<li><a href="#">Team</a></li>
-			<li><a href="#">Careers</a></li>
-		</ul>
-		<ul class="column3">
-			<li class="title">Contact</li>
-			<li><a href="#">Chris McIntyre</a></li>
-			<li><a href="#">Rural Western PA</a></li>
-		</ul>
-	</div>
+ <nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container footer-columns col-xs-12 col-xs-offset-1 text-center">
+    <ul class="column1 col-sm-4">
+      <li class="title">Teachers</li>
+      <li><%= link_to 'Teach a Course', new_instructor_course_path %></li>
+      <li><a href="#">View Dashboard</a></li>
+    </ul>
+    <ul class="column2 col-sm-4">
+      <li class="title">About</li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+    <ul class="column3 col-sm-4">
+      <li class="title">Contact</li>
+      <li><a href="#">Chris McIntyre</a></li>
+      <li><a href="#">Rural Western PA</a></li>
+    </ul>
+  </div>
 </nav>
 
 <%= yield %>
+
+  
 
 </body>
 </html>
