@@ -13,17 +13,18 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
    	user = FactoryGirl.create(:user)
    	sign_in user
    	
+ 
    	assert_difference "Course.count" do
-	   post :create, {course: {
-   		title: "Yolo",
-   		description: "Easy",
-   		cost: "1"
+	   post :create, 
+   		:course => {
+   		:title => "Yolo",
+   		:description => "Easy",
+   		:cost => "1"
    		}
-	   }
 	  end
-
+ 
 	  assert_redirected_to instructor_course_path(assigns(:course))
-
+ 
 	  assert_equal 1, user.courses.count
 	end
 
