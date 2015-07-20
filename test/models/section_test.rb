@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class SectionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
-end
+#class SectionTest < ActiveSupport::TestCase
+ # def "new section" do 
+  #	assert false
+  #end
+#end

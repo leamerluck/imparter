@@ -17,10 +17,10 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
    	assert_difference "Course.count" do
 	   post :create, 
    		:course => {
-   		:title => "Yolo",
-   		:description => "Easy",
-   		:cost => "1"
-   		}
+	   		:title => "Yolo",
+	   		:description => "Easy",
+	   		:cost => "1"
+	   		}
 	  end
  
 	  assert_redirected_to instructor_course_path(assigns(:course))
