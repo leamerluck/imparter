@@ -18,15 +18,14 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
     assert_equal 1, course.sections.count
   end
 
-  #test "create section not signed in" do
-  #	course = FactoryGirl.create(:course) 
+  test "create section not signed in" do
+  	course = FactoryGirl.create(:course) 
 
-  #	assert_no_difference "Section.count" do
-  #		post :create, { course_id: course, section: { title: 'yolo'
-  #		}
-  #	}
-  #	end
-  #	assert_redirected_to new_user_session_path
-  	#assert false
-  #end
+  	assert_no_difference "Section.count" do
+  		post :create, { course_id: course, section: { title: 'yolo'
+  		}
+ 		}
+  	end
+  	assert_redirected_to new_user_session_path
+  end
 end
