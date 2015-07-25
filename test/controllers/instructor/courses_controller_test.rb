@@ -7,6 +7,7 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
    	 sign_in user
      get :new
      assert_response :success
+     assert_template :new
    end
 
   test "create course" do 
@@ -53,6 +54,14 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
 
 		   assert_response :unprocessable_entity
 		end
+	end
+
+	test "index template" do
+		 user = FactoryGirl.create(:user)
+   	 sign_in user
+     get :index
+     assert_response :success
+     assert_template :index
 	end
 
 end
