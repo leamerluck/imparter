@@ -10,6 +10,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	margin: 0;
 }
 
+html, body {
+	height: 100%;
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* margin equal to footer height */
+	margin-bottom: 100px;
+	overflow: auto;
+}
+
 .navbar-default {
 	background: url('old_moon.png');
 	border-radius: 0;
@@ -22,23 +33,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	font-size: 36px;
 	font-weight: 100;
 	border-radius: 0;
-}
-
-.footer-columns {
-	margin: 0;
-	padding: 10px;
-
-	ul {
-	list-style: none;
-	display: inline-block;
-	color: white;
-	padding-right: 25px;
-	font-family: 'Josefin Sans', sans-serif;
-	
-		a{
-				text-decoration: none;
-		}
-	}
 }
 
 .title {

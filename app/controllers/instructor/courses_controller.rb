@@ -23,6 +23,9 @@ class Instructor::CoursesController < ApplicationController
 	def show
 	end
 
+	def destroy
+	end
+
 	private
 
 	def require_authorized_for_current_course
@@ -37,6 +40,6 @@ class Instructor::CoursesController < ApplicationController
 	end
 
 	def course_params
-		params.require(:course).permit(:title, :description, :cost)
+		params.require(:course).permit(:title, :description, :cost, :image)
 	end
 end

@@ -39,6 +39,15 @@ gem 'simple_form'
 # Gem for TDD
 gem 'factory_girl_rails', '~> 4.0'
 
+# Carrierwave for Image/Video upload
+gem 'carrierwave'
+
+# Figaro for confidentiality
+gem 'figaro', '>= 1.0.0'
+
+# Carrierwave needs for communication with s3
+gem 'fog', '~> 1.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
