@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  
+<div class="page-wrap"> 
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,30 +49,21 @@
     <p class="alert alert-danger"><%= "User credentials invalid" %></p>
   <% end %>
 
+<%= yield %>
+</div>
   <!-- Sticky footer -->
- <nav class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container footer-columns col-xs-12 col-xs-offset-1 text-center">
-    <ul class="column1 col-sm-4">
+<footer class="navbar navbar-inverse footer-columns col-xs-12 col-xs-offset-1 text-center">
+    <ul class="column1 col-sm-6">
       <li class="title">Teachers</li>
       <li><%= link_to 'Teach a Course', new_instructor_course_path %></li>
       <li><%= link_to 'Dashboard', instructor_courses_path %></li>
     </ul>
-    <ul class="column2 col-sm-4">
+    <ul class="column2 col-sm-6">
       <li class="title">About</li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Careers</a></li>
-    </ul>
-    <ul class="column3 col-sm-4">
       <li class="title">Contact</li>
       <li><a href="#">Chris McIntyre</a></li>
-      <li><a href="#">Rural Western PA</a></li>
     </ul>
-  </div>
-</nav>
-
-<%= yield %>
-
-  
+</footer
 
 </body>
 </html>
