@@ -45,8 +45,14 @@ gem 'carrierwave'
 # Figaro for confidentiality
 gem 'figaro', '>= 1.0.0'
 
+# For resizing resolution of images
+gem 'mini_magick'
+
 # Carrierwave needs for communication with s3
-gem 'fog', '~> 1.3.1'
+#gem 'fog', '~> 1.3.1'
+
+# Replace gog with carrierwave-aws for large video performance
+gem 'carrierwave-aws'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
