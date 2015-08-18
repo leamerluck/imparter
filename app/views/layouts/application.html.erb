@@ -58,7 +58,7 @@
     <p class="alert alert-info"><%= "User successfully signed in" %></p>
   <% end %>
   <% if alert.present? %>
-    <p class="alert alert-danger"><%= "User credentials invalid" %></p>
+    <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
 <%= yield %>

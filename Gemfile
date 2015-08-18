@@ -51,8 +51,11 @@ gem 'mini_magick'
 # Carrierwave needs for communication with s3
 #gem 'fog', '~> 1.3.1'
 
-# Replace gog with carrierwave-aws for large video performance
+# Replace fog with carrierwave-aws for large video performance
 gem 'carrierwave-aws'
+
+# Integrate stripe for allowing secure Credit Card payments
+gem 'stripe'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
