@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 # Bootstrap for responsiveness
 gem 'bootstrap-sass', '~> 3.3.4'
 
-# User authentication 
+# User authentication
 gem 'devise'
 
 # Simple form for sign-in, sign-up, etc.
@@ -56,6 +56,9 @@ gem 'carrierwave-aws'
 
 # Integrate stripe for allowing secure Credit Card payments
 gem 'stripe'
+
+# To order the lessons
+gem 'ranked-model'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
