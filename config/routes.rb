@@ -1,10 +1,14 @@
 Imparter::Application.routes.draw do
   devise_for :users
+  resource :dashboard, :only => :show
   root 'static_pages#index'
+
   resources :courses, :only => [:index, :show] do
     resources :enrollments, :only => :create
   end
+
   resources :lessons, :only => [:show]
+
   namespace :instructor do
     resources :lessons, :only => :update
     resources :sections, :only => :update
@@ -12,7 +16,7 @@ Imparter::Application.routes.draw do
       resources :lessons, :only => [:new, :create]
     end
     resources :courses, :only => [:index, :new, :create, :show] do
-      resources :sections, :only => [:new, :create]
+      resources :sections, :only => :create
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

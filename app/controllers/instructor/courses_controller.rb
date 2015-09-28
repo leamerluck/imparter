@@ -1,9 +1,9 @@
 class Instructor::CoursesController < ApplicationController
 	before_action :authenticate_user!
 	before_action :require_authorized_for_current_course, :only => [:show]
-	 
-	
-	def index 
+
+
+	def index
 		@courses = Course.all
 	end
 
@@ -21,6 +21,7 @@ class Instructor::CoursesController < ApplicationController
 	end
 
 	def show
+		@section = Section.new
 	end
 
 	def destroy
