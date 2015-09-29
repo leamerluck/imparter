@@ -65,17 +65,17 @@
 </div>
   <!-- Sticky footer -->
 <footer class="navbar navbar-inverse footer-columns col-xs-12 col-xs-offset-1 text-center">
-    <ul class="column1 col-sm-6">
+    <ul class="column1 col-sm-4">
       <li class="title">Teachers</li>
       <li><%= link_to 'Teach a Course', new_instructor_course_path %></li>
       <li><%= link_to 'My Dashboard', dashboard_path %></li>
     </ul>
-    <ul class="column2 col-sm-6">
+    <ul class="column2 col-sm-4">
       <li class="title">Contact</li>
       <%= mail_to "chris.mcintyre.dev@gmail.com", "Email Me" %>
       <li><%= link_to "Chris McIntyre", 'http://christinamcintyre.com' %></li>
     </ul>
-    <ul class="column3 col-sm-6 social">
+    <ul class="column3 col-sm-4 social">
       <li class="title">Social</li>
         <%= link_to 'https://github.com/leamerluck' do %>
           <%= image_tag 'github.png', :class => 'social-button' %>
