@@ -23,9 +23,19 @@ html, body {
 	color: white;
 	padding-right: 25px;
 	font-family: 'Josefin Sans', sans-serif;
-	
+
 		a{
 				text-decoration: none;
 		}
 	}
+}
+
+.social-button {
+	width: 32px;
+	padding: 5px;
+	margin: 4px;
+}
+
+.social a:hover {
+	text-decoration: none;
 }

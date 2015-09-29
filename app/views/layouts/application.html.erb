@@ -71,9 +71,22 @@
       <li><%= link_to 'My Dashboard', dashboard_path %></li>
     </ul>
     <ul class="column2 col-sm-6">
-      <li class="title">About</li>
       <li class="title">Contact</li>
-      <li><a href="#">Chris McIntyre</a></li>
+      <%= mail_to "chris.mcintyre.dev@gmail.com", "Email Me" %>
+      <li><%= link_to "Chris McIntyre", 'http://christinamcintyre.com' %></li>
+    </ul>
+    <ul class="column3 col-sm-6 social">
+      <li class="title">Social</li>
+      <br/>
+        <%= link_to 'https://github.com/leamerluck' do %>
+          <%= image_tag 'github.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'https://www.linkedin.com/in/chrismcintyrewebdev' do %>
+          <%= image_tag 'linkedIn.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'https://twitter.com/learngrowaccept' do %>
+          <%= image_tag 'twitter.png', :class => 'social-button' %>
+        <% end %>
     </ul>
 </footer
 
