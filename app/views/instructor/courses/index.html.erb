@@ -3,8 +3,8 @@
 	<h1 class="text-center">List of Your Courses Offered</h1>
 	<% @courses.each do |course| %>
 		<h2 class="text-center"><%= link_to course.title, instructor_course_path(course) %></h2>
-		<%= image_tag course.image, :class => 'img-responsive text-center' %> 
+		<%= image_tag course.image, :class => 'img-responsive text-center course-pic' %>
 	<% end %>
 
-	
+
 </div>

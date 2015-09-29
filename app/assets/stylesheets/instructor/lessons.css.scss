@@ -1,3 +1,20 @@
 // Place all the styles related to the instructor/lessons controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.lesson {
+	background-color:black;
+	margin-top: 10px;
+	height: 130px;
+	font-size: 15px;
+
+	a {
+		color: white;
+		font-family: "Helvetica Neue", Helvetica;
+		font-weight: 100;
+
+		b {
+			font-weight: 100;
+			font-size: 25px;
+		}
+	}
+}

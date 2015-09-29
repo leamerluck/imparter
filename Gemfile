@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 # Bootstrap for responsiveness
 gem 'bootstrap-sass', '~> 3.3.4'
 
-# User authentication 
+# User authentication
 gem 'devise'
 
 # Simple form for sign-in, sign-up, etc.
@@ -45,8 +45,22 @@ gem 'carrierwave'
 # Figaro for confidentiality
 gem 'figaro', '>= 1.0.0'
 
+# For resizing resolution of images
+gem 'mini_magick'
+
 # Carrierwave needs for communication with s3
-gem 'fog', '~> 1.3.1'
+#gem 'fog', '~> 1.3.1'
+
+# Replace fog with carrierwave-aws for large video performance
+gem 'carrierwave-aws'
+
+# Integrate stripe for allowing secure Credit Card payments
+gem 'stripe'
+
+# To order the lessons
+gem 'ranked-model'
+
+gem 'jquery-ui-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
